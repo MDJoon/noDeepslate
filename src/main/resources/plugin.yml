@@ -1,0 +1,10 @@
+  name: NoDeepslate
+  main: com.github.mdjoon.nodeepslate.NoDeepslatePlugin
+  version: 1.0
+  api-version: 1.21
+  load: STARTUP
+  commands:
+        namechunk:
+  libraries:
+    - org.jetbrains.kotlin:kotlin-stdlib:1.9.20
+    - org.jetbrains.kotlin:kotlin-reflect:1.9.20
