@@ -52,19 +52,4 @@ class NoDeepslatePlugin : JavaPlugin(), Listener {
             }
         }
     }
-
-    override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
-        val player = sender as Player
-        val chunk = player.chunk
-        val world = player.world
-
-        for (y in world.minHeight..world.maxHeight) {
-            for (x in 0..15) {
-                for (z in 0..15) {
-                    player.sendMessage(chunk.getBlock(x, y, z).type.name)
-                }
-            }
-        }
-        return true
-    }
 }
